@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* The Modal (background) */
+.modal {
+/*     display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0);  *//* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.wrapper{
+	padding:0;
+	margin:0;
+	position: relative;
+}
+
+img{
+	margin: 0;
+	padding: 0px;
+	font-size: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+body {font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;margin: 0px;overflow-x: hidden;}
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+header{background-image: url(../img/images/header_02.png);height: 92px;width: 100%;position: fixed;z-index: 101;}
+footer{background-color: #d70c18;}
+/*試算*/
+pa01{background-color: #f9edd3;background-image: url(../img/line.png);background-position: center top;display: block;width: 100%;padding-top: 70px;overflow: hidden;}
+pa02{display: block;width: 100%;padding-top: 70px;overflow: hidden;}
+pa03{display: block;width: 100%;padding-top: 70px;overflow: hidden;background-color: #f9edd3;background-image: url(../img/pic19.png);background-repeat: no-repeat;background-position: center top;}
+pa04{display: block;width: 100%;padding: 70px 0px;overflow: hidden;background-image: url(../img/pic18.png);background-attachment: fixed;}
+.pa03line{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #898989;padding: 10px 0px;font-size: 18px;line-height: 1.5em;}
+.pa03line img{width: 100%; max-width:167px; min-width:120px}
+.tab01{background-image: url(../img/tab_11.png);background-repeat: repeat-x;background-position: left bottom;background-color: #c1272d;}
+.font0{font-size: 0px;}
+.tab00{
+	position: relative;
+	z-index: 3;
+	border: none;
+	border-spacing: 0;
+    border-collapse: collapse;
+	padding:0px;
+}
+
+#tabbin{
+	background-color: #c1272d;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-top-right-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	-moz-border-radius-topright: 50px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	max-width: 900px;
+	position: relative;
+	z-index: 100;
+	margin: 0 auto;
+	width: 80%;
+	box-shadow: 0 0px 50px rgba(0,0,0,0.5);
+	background-image: url(../img/tab_bb.png);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+.tabtitle{background-image: url(../img/pic01.png);background-repeat: no-repeat;background-position: center top;height: 92px;width: 100%; margin-top:40px}
+.fontw{color: rgba(255,255,255,1);}
+.fontr{color: #d01e22;}
+.font12{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 12px;line-height: 1.5em;}
+.font14{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 14px;line-height: 1.5em;}
+.font16{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 16px;line-height: 1.5em;}
+.font18{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 18px;line-height: 1.5em;}
+.font20{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 20px;line-height: 1.5em;}
+.font22{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 22px;line-height: 1.5em;}
+.font24{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 24px;line-height: 1.5em;}
+.font26{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 26px;line-height: 1.5em;}
+.font28{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 28px;line-height: 1.5em;}
+.font30{font-family: interstate-light, "微軟正黑體", Verdana, 'LiHei Pro', "Heiti TC", STHeiti, sans-serif;font-size: 30px;line-height: 1.5em;}
+ul.popmenu{margin: 0;padding: 0;list-style-type: none;background-color: rgba(255,255,255,1);
+}
+ul.popmenu li{margin: 0px;padding: 0px; float:right}
+ul.tabshow{width: 100%;list-style-type: none; margin:0; padding:0;}
+.scrolldown{
+	background-image: url(../img/scroll-down.png);
+	background-repeat: no-repeat;
+	height: 77px;
+	width: 50px;
+	margin-left: -25px;
+	position:absolute;
+	z-index: 1000;
+	left: 50%;
+	bottom: 50px;
+}
+
+
+@media (min-width:1001px){
+ad{	background-color: #c30d23;background-image: url(../img/line.png);background-position: center top;display: block;width: 100%; height:700px}
+.kvw{ display:none1}
+.kvh{ display:none}
+.tabL{background-image: url(../img/pic06.png);height: 216px;width: 96px;position: absolute;z-index: 3;margin-top: -216px;margin-left: -540px;left: 50%;}
+.tabR{background-image: url(../img/pic07.png);height: 211px;width: 323px;margin-top: -211px;margin-left: 300px;position: absolute;z-index: 2;left: 50%;}
+.intab01{width: 500px;}
+.pa04tab{background-color: #c1272d;background-image: url(../img/pic16.png);background-repeat: no-repeat;background-position: center top;border: 3px solid rgba(255,255,255,1);width: 90%;max-width: 900px;border-radius: 50px;margin-top: 20px;margin-right: auto;margin-bottom: 60px;margin-left: auto;padding: 20px;}
+.dogad{
+	height: 228px;
+	width: 170px;
+	position: fixed;
+	z-index: 1000;
+	right: 0px;
+	bottom: 50px;
+}
+}
+
+@media (max-width:1000px){
+ad{	background-color: #c30d23;background-image: url(../img/line.png);background-position: center top;display: block;width: 100%; min-height:250px}
+.intab01{width: 100%;}
+
+.kvw{ display:none}
+.kvh{ display:none1}
+.tabL{background-image: url(../img/pic06.png);height: 216px;width: 96px;position: absolute;z-index: 3;margin-top: -216px;margin-left: 0px;left: 0px;}
+.tabR{background-image: url(../img/pic07.png);height: 211px;width: 323px;margin-top: -211px;margin-left: 300px;position: absolute;z-index: 2;right: 0px;}
+.pa04tab{background-color: #c1272d;background-image: url(../img/pic16s.png);background-repeat: no-repeat;background-position: center top;border: 3px solid rgba(255,255,255,1);width: 90%;max-width: 900px;border-radius: 50px;margin-top: 230px;margin-right: auto;margin-bottom: 60px;margin-left: auto;padding: 20px;}
+ul.popmenu{position:absolute; right:0px; margin-top:28px; width:200px}
+ul.popmenu li{
+	display: block;
+	float: left;
+	margin-left: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(128,128,128,1);
+	width: 100%;
+	margin:0;
+}
+#animation_container{ margin-left:-50px}
+.dogad{
+	height: 228px;
+	width: 50px;
+	position: fixed;
+	z-index: 1000;
+	right: 0px;
+	bottom: 50px;
+}
+}
+
+
+/**************上下飄********************/
+
+.hot_1 {
+    position: absolute;
+    -webkit-animation: baloon_1 3s infinite;
+    -moz-animation: baloon_1 3s infinite;
+    -ms-animation: baloon_1 3s infinite;
+    -o-animation: baloon_1 3s infinite;
+    animation: baloon_1 3s infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.hot_2 {
+    position: absolute;
+    -webkit-animation: baloon_1 4s infinite;
+    -moz-animation: baloon_1 4s infinite;
+    -ms-animation: baloon_1 4s infinite;
+    -o-animation: baloon_1 4s infinite;
+    animation: baloon_1 4s infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.hot_3 {
+    position: absolute;
+    -webkit-animation: baloon_1 1.5s infinite;
+    -moz-animation: baloon_1 1.5s infinite;
+    -ms-animation: baloon_1 1.5s infinite;
+    -o-animation: baloon_1 1.5s infinite;
+    animation: baloon_1 1.5s infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes baloon_1{
+0% { transform:translateY(20px);}
+50% {transform:translateY(50px);}
+100% {transform:translateY(20px);}
+}
+
+@-moz-keyframes baloon_1{
+0% { transform:translateY(20px);}
+50% {transform:translateY(50px);}
+100% {transform:translateY(20px);}
+}
+
+@-ms-keyframes baloon_1{
+0% { transform:translateY(20px);}
+50% {transform:translateY(50px);}
+100% {transform:translateY(20px);}
+}
+
+@-o-keyframes baloon_1{
+0% { transform:translateY(20px);}
+50% {transform:translateY(50px);}
+100% {transform:translateY(20px);}
+}
+
+@keyframes baloon_1{
+0% { transform:translateY(20px);}
+50% {transform:translateY(50px);}
+100% {transform:translateY(20px);}
+}
