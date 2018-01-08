@@ -1,0 +1,753 @@
+
+ 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=480">
+<title>年終理財術</title>
+<meta name="description" content="Source code generated using layoutit.com">
+<meta name="author" content="LayoutIt!">
+<meta property="og:title" lang="zh-Hant-TW"  content="年終理財術">
+<meta property="og:site_name" lang="zh-Hant-TW" content="辛勤工作回報的年終獎金，正在想如何好好規劃？「旺旺發財」新臺幣定存專案，最高階年息1.68%讓您穩穩存好存滿，加薪又加值！"/>
+<meta property="og:url" content="http://" />
+<meta property="og:description" lang="zh-Hant-TW" content="辛勤工作回報的年終獎金，正在想如何好好規劃？「旺旺發財」新臺幣定存專案，最高階年息1.68%讓您穩穩存好存滿，加薪又加值！"/>
+<meta property="og:image" content="/TsCms/event/mk171201/img/kv.jpg" />
+<meta property="og:type"  content="website" />
+<link rel="stylesheet" href="/TsCms/event/mk171201/css/pure-css-select-style.css">
+<link rel="stylesheet" href="/TsCms/event/mk171201/css/index.css">
+<link rel="stylesheet" href="/TsCms/event/mk171201/css/normalize.css" type="text/css">
+<script src="/TsCms/event/mk171201/js/jquery-1.12.0.min.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+<script type="text/javascript">
+function validateForm(){
+	var chtName = document.forms["mk171201-form"]["chtName"].value;
+	var phone2 = document.forms["mk171201-form"]["phone2"].value;
+	var phone3 = document.forms["mk171201-form"]["phone3"].value;
+	var mobile = document.forms["mk171201-form"]["mobile"].value;
+	var branch = document.forms["mk171201-form"]["branch"].value;
+ 	if (chtName=='') {
+		alert('請輸入姓名');
+		$("#chtName").focus();
+		return false;
+	}else if (phone2=='' && mobile=='') {
+		alert('請輸入市話或手機');
+		if(phone2==''){
+			$("#phone2").focus();
+		}else if(mobile==''){
+			$("#mobile").focus();
+		}
+		return false;
+	}else if (branch=='') {
+		alert('請選擇欲洽辦分行');
+		$("#branch").focus();
+		return false;
+	} 
+}
+function submit(){
+	$('#mk171201-form').submit();
+}
+$(function(){
+	//顯示成功或失敗
+	
+	
+	
+	
+	
+	
+	
+});
+
+function closeFailPage(){
+	$('#failPage').hide();
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109454817-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109454817-1');
+</script>
+
+</head>
+
+<body onLoad="MM_preloadImages('/TsCms/event/mk171201/img/images/headero_05.png','/TsCms/event/mk171201/img/images/headero_06.png','/TsCms/event/mk171201/img/images/headero_07.png','/TsCms/event/mk171201/img/images/headero_09.png');init();">
+<div class="wrapper">
+<!-- 提交後的錯誤或成功訊息 -->
+<!-- The Fail Message Modal -->
+<div id="failPage"class="modal" style="display: none;">
+    <div class="modal-content">
+	<h5>親愛的客戶您好，<br>請再次確認您輸入的資料是否正確，謝謝。</h5>
+	
+	<button class="btTypeC" onclick="closeFailPage()">修改資料</button>
+	</div>
+</div>
+
+<!-- The Success Message Modal -->
+<div id="successPage" class="modal" style="display: none;">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+<!--     <span class="close">&times;</span> -->
+    <p>您已完成活動登錄，感謝您的參與！</p>
+    <button class="btTypeC" onclick="$('#successPage').hide()">回活動頁</button>
+  </div>
+
+</div>
+<!-- 提交後的錯誤或成功訊息 end -->
+<img src="/TsCms/event/mk171201/img/kv.jpg" style="display:none">
+<div class="scrolldown hot_3"></div>
+<div class="dogad"><a href="https://goo.gl/uOTgHH" target="_blank"><img src="/TsCms/event/mk171201/img/dogright.png" class="hot_2 kvw"><img src="/TsCms/event/mk171201/img/dogright2.png" class="kvh" style="float:right"></a></div>
+<header>
+<div class="tab00">
+  <table width="100%" border="0" cellpadding="00" cellspacing="0" style="max-width:1000px" align="center">
+    <tr>
+      <td width="140" align="center"><a href="https://www.taishinbank.com.tw/TS/TS02/TS0298/TS0298-SE" target="_blank"><img src="/TsCms/event/mk171201/img/images/header_01.png"></a></td>
+      <td>&nbsp;</td>
+<!--  PC主選單  -->
+      <td>
+      <ul class="popmenu">
+      <li><a href="javascript:pa04go()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('btn04','','/TsCms/event/mk171201/img/images/headero_09.png',1)"><img src="/TsCms/event/mk171201/img/images/header_09.png" id="btn04"></a></li>
+      <li><a href="javascript:pa03go()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('btn03','','/TsCms/event/mk171201/img/images/headero_07.png',1)"><img src="/TsCms/event/mk171201/img/images/header_07.png" id="btn03"></a></li>
+      <li><a href="javascript:pa02go()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('btn02','','/TsCms/event/mk171201/img/images/headero_06.png',1)"><img src="/TsCms/event/mk171201/img/images/header_06.png" id="btn02"></a></li>
+      <li><a href="javascript:pa01go()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('btn01','','/TsCms/event/mk171201/img/images/headero_05.png',1)"><img src="/TsCms/event/mk171201/img/images/header_05.png" id="btn01"></a></li>
+      
+      
+      </ul></td>
+<!--mobile選單-->
+      <td width="60" align="left" class="kvh"><a href="javascript:;"><img src="/TsCms/event/mk171201/img/menu.png" id="onoff"></a></td>
+    </tr>
+  </table>
+  </div>
+</header>
+
+<!--主KV-->
+<ad>
+<iframe src="http://localhost:8080/TsCms/event/mk171201/kvh" width="100%" height="675" frameborder="0" id="kv" type="text/html" allowfullscreen="allowFullScreen" style="margin-top:50px"></iframe>
+
+<!--<div id="animation_container" style="width:100%; max-width:1366px; margin:50px auto 0 auto; position:relative">
+		<canvas id="canvas" style="position: absolute; display: block;width:100%; max-width:1366px"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; max-width:1366px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>-->
+</ad>
+
+
+
+<!--試算單元-->
+<pa01>
+<div id="tabbin">
+<table width="90%" cellpadding="0" cellspacing="0" align="center" style="max-width:1000px; position:relative; z-index:100" class="tab00" id="tab00">
+  <tr class="font0">
+    <td width="20" height="20"><img src="/TsCms/event/mk171201/img/sp.png" width="18" height="18"></td>
+    <td></td>
+    <td width="20" height="20"><img src="/TsCms/event/mk171201/img/sp.png" width="18" height="18"></td>
+  </tr>
+  <tr>
+    <td height="100" valign="top"></td>
+    <td valign="top"><div class="tabtitle"></div>
+      <table width="90%" align="center">
+        <tr>
+          <td height="50" colspan="3" align="center"><img src="/TsCms/event/mk171201/img/pic04.png" class="kvh"></td>
+          </tr>
+        <tr>
+          <td width="4" class="kvw"><img src="/TsCms/event/mk171201/img/pic04.png"></td>
+          <td width="4" class="kvw">&nbsp;</td>
+          <td><img src="/TsCms/event/mk171201/img/pic02.png" style="position:absolute; margin:10px 0 0 20px"><img src="/TsCms/event/mk171201/img/pic03.png" style="position:absolute; margin:12px 0 0 0; right:80px">
+            <input class="pure-css-select-style theme-rounded2" id="principal" type="text" pattern="\d*">
+  </td>
+        </tr>
+        <tr>
+          <td height="50" colspan="3" align="center"><img src="/TsCms/event/mk171201/img/pic05.png" class="kvh"></td>
+        </tr>
+        <tr>
+          <td class="kvw"><img src="/TsCms/event/mk171201/img/pic05.png"></td>
+          <td class="kvw">&nbsp;</td>
+          <td><img src="/TsCms/event/mk171201/img/pic02.png" style="position:absolute; margin:10px 0 0 20px"><img src="/TsCms/event/mk171201/img/pic03.png" style="position:absolute; margin:12px 0 0 0; right:80px">
+            <input class="pure-css-select-style theme-rounded2" id="principal-and-interest" type="text" readonly>
+            </td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+          </tr>
+        </table></td>
+    <td valign="top" style="background-image:url(/TsCms/event/mk171201/img/tab_06.png)"></td>
+  </tr>
+  <tr>
+    <td height="80" valign="bottom"><img src="/TsCms/event/mk171201/img/sp.png" width="18" height="18"><img src="/TsCms/event/mk171201/img/money.png" style="position:absolute; margin:-45px 0 0 -80px"></td>
+    <td align="center" class="fontw"><table width="90%" align="center">
+      <tr>
+        <td width="30" class="font14">&nbsp;</td>
+        <td align="center" class="font14">※試算內容僅供參考，承作專案收益係依客戶<span class="font16" style=" color:#ffe000; font-weight:bold">實際存款天數</span>計算。</td>
+      </tr>
+    </table></td>
+    <td><img src="/TsCms/event/mk171201/img/sp.png" width="18" height="18"></td>
+  </tr>
+</table></div>
+
+<div class="tabL"></div>
+<div class="tabR"></div>
+</pa01>
+<!--利息PK比一比單元-->
+<pa02>
+<table width="100%" style="max-width:1000px" align="center">
+  <tr>
+    <td width="10" class="kvw"><img src="/TsCms/event/mk171201/img/men.gif" width="209" style="position:relative;" class="men"></td>
+    <td valign="top"><table width="90%" align="center" id="pk">
+      <tr>
+        <td align="center" class="kvh"><img src="/TsCms/event/mk171201/img/men.gif" width="209" style="position:relative;" class="men"><img src="/TsCms/event/mk171201/img/pic10.png" style="margin:-30px 0 0 -20px; position:absolute" class="hot_1">
+            <img src="/TsCms/event/mk171201/img/pic11.png" style="margin:80px 0 0 0px; position:absolute" class="hot_2">
+        </td>
+      </tr>
+      <tr>
+        <td><img src="/TsCms/event/mk171201/img/pic09.png" width="327" height="56"><br></td>
+        </tr>
+      <tr>
+        <td height="10"></td>
+        </tr>
+      <tr>
+        <td><span class="font20"><u>阿旺</u>是個認真工作的上班族，辛苦整年最期待領到年終。<br class="kvw">
+          新年新希望，<u>阿旺</u>想開始妥善規劃資金發揮效益！<br>
+          於是在107/02/01匯入新資金新臺幣</span><span class="font16">(下同)</span><span class="font20">200萬元到台新銀行，<br class="kvw">
+            若只承作一般定存</span><span class="font16">(一年期固定利率1.05%)</span><span class="font20">利息收入為21,000元，<br class="kvw">
+              若聰明選擇</span>
+          <span class="font24 fontr"><b>「旺旺發財」專案，則享平均年息1.12%，<br class="kvw">
+            利息收入共達22,469元 ，規劃整整多了1,469元喔！</b></span></td>
+        </tr>
+      </table></td>
+    <td width="10" valign="top" class="kvw">
+      <img src="/TsCms/event/mk171201/img/pic10.png" style="margin:50px 0 0 -200px; position:absolute" class="mon1 hot_1">
+      <img src="/TsCms/event/mk171201/img/pic11.png" style="margin:-50px 0 0 -320px; position:absolute" class="mon2 hot_2"></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="kvw">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="3" align="center" valign="top">
+    <img src="/TsCms/event/mk171201/img/tab01.gif" style="max-width:900px; width:90%" class="kvw" id="tbox1">
+    <img src="/TsCms/event/mk171201/img/tab01s.gif" style="max-width:900px; width:90%" class="kvh" id="tbox2">
+    </td>
+    </tr>
+  <tr>
+    <td colspan="3" height="15"></td>
+    </tr>
+  <tr>
+    <td colspan="3" align="center" class="font12">※專案試算內容僅供參考，實際差異仍以客戶承作本專案當時之牌告利率為準，此不為本行任何形式之保證或預期。<br>
+      ※上述計算係依據本行107年1月2日新臺幣存款牌告利率。<br>
+      ※以上優惠利率皆以年利率表示，範例說明僅供參考，承作本專案之收益係依客戶實際存款天數計算。</td>
+  </tr>
+  <tr>
+   <td colspan="3" height="15"></td>
+  </tr>
+</table>
+
+
+</pa02>
+<!--活動內容-->
+<pa03>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="70" align="center" valign="top"><img src="/TsCms/event/mk171201/img/pic14.png" id="pa0300"></td>
+  </tr>
+  <tr>
+    <td height="50" align="center" bgcolor="#f3dcaf" class="font24">「旺旺發財」優利定存專案</td>
+  </tr>
+  <tr>
+    <td style="background-image:url(/TsCms/event/mk171201/img/line.png)">
+    
+    <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width:1000px">
+    <tr><td width="210" height="20" align="right">
+    <ul class="tabshow">
+    <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic01.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">即日起至107年03月30日<br class="kvw"><span class="font12">(總額有限，額滿截止)</span>。</td></tr></table></li>
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic02.png"></td>
+        <td width="20" class="pa03line"></td>
+        <td class="pa03line">本行國內分行之自然人客戶<br class="kvw"><span class="font12">(新舊客戶皆可)</span>。</td></tr></table></li>
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic03.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">臨櫃、郵寄通訊、網路銀行、行動銀行<br class="kvw">
+          <span class="font12">(承作時間請依官網公告為主)</span>。</td></tr></table></li>
+        
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic04.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">臨櫃、郵寄通訊：單筆新臺幣10萬元<span class="font12">(含)</span>以上；<br class="kvw">
+          網路銀行、行動銀行：單筆新臺幣1萬元<span class="font12">(含)</span>以上。</td></tr></table></li>
+        
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic05.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">承作日之前一營業日於本行往來總資產較106年12月29日之淨增加部分，<br class="kvw">
+          扣除活動期間內已承作本專案或其他存款專案之金額。</td></tr></table></li>
+        
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic06.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">採單利計息，並於每月開戶相對日付息。</td></tr></table></li>
+        
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic07.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">可於每月開戶相對日(付息日)期滿前預約本金減降，<br class="kvw">選擇下個月續存金額，惟續存金額不得低於1萬元。</td></tr></table></li>
+   <li><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+        <td align="right" class="pa03line" width="190"><img src="/TsCms/event/mk171201/img/ic08.png"></td><td width="20" class="pa03line"></td>
+        <td class="pa03line">即日起至107年03月30日<br class="kvw"><span class="font12">(總額有限，額滿截止)</span>。</td></tr></table></li>
+   <li><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" class="kvw">
+            <tr>
+              <td><br>
+<img src="/TsCms/event/mk171201/img/ic08.png" style=" max-width:167px"></td>
+              </tr>
+            <tr>
+              <td align="center"><img src="/TsCms/event/mk171201/img/ic09.png" style="width:100%; max-width:775px">
+              </td>
+              </tr>
+            </table>
+            
+            <table width="91%" border="0" align="center" cellpadding="0" cellspacing="0" class="kvh">
+            <tr>
+              <td><br>
+<img src="/TsCms/event/mk171201/img/ic08.png" style=" max-width:167px"></td>
+              </tr>
+            <tr>
+              <td><img src="/TsCms/event/mk171201/img/ic09s.png" style="width:100%; max-width:775px"></td>
+              </tr>
+            </table>
+            
+            </li>
+        
+        
+     </ul>
+ 
+        </td>
+        </tr>
+   
+      <tr>
+        <td height="20"></td>
+        </tr>
+      <tr>
+        <td align="left" height="20"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="font12">※以上各期利率皆以年利率揭示，各期實際收益率係依實際存款期間計算<br>
+※實際利息收益為存入本金×本專案當期之固定年利率×當期實際承作本專案定存天數÷365天<br>
+※活動詳情及限制請洽台新銀行各分行，活動未盡事項，悉依台新銀行公告活動內容為主。<br>
+<span class="font16"><b>※活動詳情及限制請洽台新銀行各分行，活動未盡事項，悉依台新銀行公告活動內容為主。</b></span></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="right" height="20"></td>
+      </tr>
+      
+    </table>
+    
+    
+    </td>
+  </tr>
+</table>
+
+</pa03>
+<!--我有興趣-->
+<pa04>
+<div class="pa04tab">
+
+<table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td height="20" align="center" valign="top"> <img src="/TsCms/event/mk171201/img/dog.png" style="margin:-305px 0 0 0" class="kvh hot_2"><img src="/TsCms/event/mk171201/img/pic15.png" style="margin:-75px 0 0 0"></td>
+  </tr>
+  <tr>
+    <td height="100" align="center" valign="top" class="kvh">
+    </td>
+  <tr>
+    <td height="140" align="center" valign="top" class="kvw">
+    </td>
+  </tr>
+  <tr>
+    <td>
+    
+<!--表單開始-->
+
+<form name="mk171201-form" id="mk171201-form" method="post" action="/TsCms/event/mk171201/register" onsubmit="return validateForm()">
+<input type="hidden" name="_csrf" value="0a256968-d0d1-44ba-8f17-545215b1d61b" />
+    <table border="0" cellspacing="0" cellpadding="0" align="left" class="intab01">
+      <tr>
+        <td height="10" colspan="2" align="left"  class="kvh"><img src="/TsCms/event/mk171201/img/mail01.png" height="20"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td width="130"  class="kvw"><img src="/TsCms/event/mk171201/img/mail01.png" height="20"></td>
+        <td>
+        <!--客戶姓名-->
+        <input name="chtName" type="text" class="pure-css-select-style theme-rounded3" maxlength="6" value=""></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" align="left"  class="kvh"><img src="/TsCms/event/mk171201/img/mail02.png" height="20" style="margin-top:10px"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td valign="top" class="kvw"><img src="/TsCms/event/mk171201/img/mail02.png" height="20" style="margin-top:10px"></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50" align="center"><img src="/TsCms/event/mk171201/img/mail0201.png" height="12"></td>
+            <td width="150">
+            	<!-- 市話 -->
+            	<input class="pure-css-select-style theme-rounded3" name="phone2" type="text" maxlength="10" value="">
+            </td>
+            <td width="50" align="center"><img src="/TsCms/event/mk171201/img/mail0202.png" alt="" height="12"></td>
+            <td width="70">
+            	<!-- 分機 -->
+            	<input class="pure-css-select-style theme-rounded3" name="phone3" type="text" maxlength="6" value="">
+           	</td>
+          </tr>
+          <tr>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            </tr>
+          <tr>
+            <td align="center" height="10"><img src="/TsCms/event/mk171201/img/mail0203.png" height="12"></td>
+            <td height="10" colspan="3" align="center">
+            	<!-- 手機 -->
+            	<input class="pure-css-select-style theme-rounded3" name="mobile" type="text" maxlength="10" value="">
+            </td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"><img src="/TsCms/event/mk171201/img/mail03.png" height="20" style="margin-top:10px"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="kvw"><img src="/TsCms/event/mk171201/img/mail03.png" height="20" style="margin-top:10px"></td>
+        <td>
+        <div class="pure-css-select-style theme-rounded" >
+        <!--請選擇分行-->
+        <select name="branch">
+          <option selected="selected" value="">我願意前往</option>
+            <option value="001">001 營業部(總行)</option>
+            <option value="002">002 敦南分行</option>
+            <option value="004">004 新生分行</option>
+            <option value="005">005 新莊分行</option>
+            <option value="006">006 桃園分行</option>
+            <option value="007">007 台中分行</option>
+            <option value="008">008 板橋分行</option>
+            <option value="009">009 高雄分行</option>
+            <option value="010">010 台南分行</option>
+            <option value="011">011 南京東路分行</option>
+            <option value="012">012 中壢分行</option>
+            <option value="015">015 苓雅分行</option>
+            <option value="016">016 蘆洲分行</option>
+            <option value="017">017 天母分行</option>
+            <option value="018">018 大里分行</option>
+            <option value="020">020 中和分行</option>
+            <option value="021">021 嘉義分行</option>
+            <option value="022">022 豐原分行</option>
+            <option value="023">023 花蓮分行</option>
+            <option value="024">024 新竹分行</option>
+            <option value="025">025 七賢分行</option>
+            <option value="026">026 信義分行</option>
+            <option value="027">027 北台中分行</option>
+            <option value="028">028 三重分行</option>
+            <option value="029">029 永福分行</option>
+            <option value="030">030 屏東分行</option>
+            <option value="031">031 大安分行</option>
+            <option value="032">032 龍潭分行</option>
+            <option value="033">033 崇德分行</option>
+            <option value="034">034 金華分行</option>
+            <option value="035">035 後甲分行</option>
+            <option value="036">036 海佃分行</option>
+            <option value="037">037 彰化分行</option>
+            <option value="038">038 五甲分行</option>
+            <option value="039">039 鳳山分行</option>
+            <option value="040">040 古亭分行</option>
+            <option value="041">041 建橋分行</option>
+            <option value="043">043 民生分行</option>
+            <option value="044">044 太平分行</option>
+            <option value="045">045 和平分行</option>
+            <option value="046">046 北高雄分行</option>
+            <option value="047">047 南新莊分行</option>
+            <option value="048">048 內湖分行</option>
+            <option value="049">049 永和分行</option>
+            <option value="051">051 逢甲分行</option>
+            <option value="052">052 竹科分行</option>
+            <option value="054">054 南屯分行</option>
+            <option value="055">055 大直分行</option>
+            <option value="056">056 南門分行</option>
+            <option value="061">061 西門分行</option>
+            <option value="062">062 敦北分行</option>
+            <option value="063">063 忠孝分行</option>
+            <option value="064">064 復興分行</option>
+            <option value="065">065 板南分行</option>
+            <option value="066">066 民權分行</option>
+            <option value="067">067 三民分行</option>
+            <option value="068">068 建北分行</option>
+            <option value="069">069 三和分行</option>
+            <option value="070">070 北新店分行</option>
+            <option value="071">071 府城分行</option>
+            <option value="072">072 東高雄分行</option>
+            <option value="073">073 基隆路分行</option>
+            <option value="074">074 新店分行</option>
+            <option value="075">075 北桃園分行</option>
+            <option value="076">076 大墩分行</option>
+            <option value="077">077 延平分行</option>
+            <option value="078">078 南崁分行</option>
+            <option value="079">079 景平分行</option>
+            <option value="080">080 文心分行</option>
+            <option value="081">081 岡山分行</option>
+            <option value="082">082 松江分行</option>
+            <option value="083">083 大雅分行</option>
+            <option value="084">084 汐止分行</option>
+            <option value="085">085 成功分行</option>
+            <option value="086">086 石牌分行</option>
+            <option value="087">087 永康分行</option>
+            <option value="088">088 南松山分行</option>
+            <option value="089">089 淡水分行</option>
+            <option value="090">090 東基隆分行</option>
+            <option value="091">091 新板分行</option>
+            <option value="092">092 北師分行</option>
+            <option value="093">093 佳里分行</option>
+            <option value="094">094 江翠分行</option>
+            <option value="097">097 松德分行</option>
+            <option value="098">098 北大分行</option>
+            <option value="099">099 南港分行</option>
+            <option value="100">100 關東橋分行</option>
+            <option value="101">101 竹北分行</option>
+            <option value="102">102 南寮分行</option>
+            <option value="103">103 八德分行</option>
+            <option value="104">104 員林分行</option>
+            <option value="105">105 市府分行</option>
+            <option value="106">106 右昌分行</option>
+            <option value="107">107 沙鹿分行</option>
+            <option value="108">108 竹南分行</option>
+            <option value="109">109 羅東分行</option>
+            <option value="110">110 東湖分行</option>
+            <option value="111">111 文山分行</option>
+            <option value="112">112 副都心分行</option>
+            <option value="113">113 景美分行</option>
+            <option value="114">114 雄科分行</option>
+          </select>
+        </select>
+      </div>
+      </td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="right" style="max-width:300px">
+      <tr></tr>
+      <tr>
+        <td align="center" class="kvw"><img src="/TsCms/event/mk171201/img/dog.png" class="hot_1" style="position:relative!important; margin-bottom:60px; margin-top:-100px"></td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td height="10" align="left">
+        <!--送出-->
+        <a href="javascript:void(0);" onclick="submit()">
+            <img border="0" src="/TsCms/event/mk171201/img/btn01.png" />
+        </a>
+        <!-- <input type="image" name="imageField" id="imageField" src="/TsCms/event/mk171201/img/btn01.png">  -->
+         <!--查詢分行地址 -->　
+       <input type="image" name="imageField2" id="imageField2" src="/TsCms/event/mk171201/img/btn02.png" onclick="window.open('https://www.taishinbank.com.tw/TS/TS12/TS1201/index.htm?region1_element1_NextRow=1&pageIndex=1');return false;"></td>
+      </tr>
+      </table>
+      
+      </form>
+      
+      
+      
+      </td>
+      
+      
+      
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" class="font12 fontw">您在以上專區所填寫之個人資料，本行將於您預約申辦服務之範圍內蒐集及處理您的個人資料</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+</pa04>
+<table width="100%" border="0" cellspacing="4" cellpadding="20">
+  <tr>
+    <td align="center" class="font24">或洽速撥專線 <span class="font28 fontr"><b>0800-000-456</b></span>按<span class="font28 fontr"><b>3</b></span><br>
+我們將儘速請專人與您聯絡</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="4" cellpadding="20" style="background-color:#e6e6e6">
+  <tr>
+    <td align="center" class="font14">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:1000px" align="center">
+    <tr>
+      <td colspan="2"><span class="font16"><b>注意事項：</b></span></td>
+      </tr>
+    <tr>
+      <td width="25" align="right" valign="top">1.</td>
+      <td>        本專案期間即日起至民國(下同)107年03月30日止。限台新銀行(以下簡稱本行)國內分行之自然人客戶(新舊客戶皆可)，且同意依本專案申請書約定辦理者，始可適用。<br></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">2.</td>
+      <td>本專案資金來源限『新資金』始可參加，『新資金』認定標準係為申請人於本行承作日之前一營業日於本行往來總資產較106年12月29日之淨增加部分，扣除活動期間內已承作本專案或其他存款專案之金額，始可承作；若申請人此筆資金已同時參加本行其他優利存款專案活動，則無法參加本專案。計算標準係依本行帳務處理暨計算原則為之，詳細計算原則詳洽本行各分行或客服專線。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">3.</td>
+      <td>下列情況皆不適用本專案：
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25" valign="top">(1)</td>
+            <td> 將原於本行投資之金融商品辦理贖回所得資金。</td>
+          </tr>
+          <tr>
+            <td valign="top">(2)</td>
+            <td>本專案期間將款項匯出至他行後再行匯入。</td>
+          </tr>
+          <tr>
+            <td valign="top">(3)</td>
+            <td>本專案期間將款項和本行他人資金互轉再行匯入。</td>
+          </tr>
+          <tr>
+            <td valign="top">(4)</td>
+            <td>將原存於本行之外幣資金轉換為新臺幣。</td>
+          </tr>
+          <tr>
+            <td valign="top">(5)</td>
+            <td>向本行申請貸放所獲得之資金。</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">4.</td>
+      <td>申請人加入本專案後，可於每月開戶相對日期滿前(需於當月到期日前)之營業時間至本行各分行臨櫃、網路銀行或行動銀行預約本金減降，並可選擇續存下一期間之金額，惟續存金額不得低於1萬元，如未申請預約本金減降，則本金將自動續存。續存金額不得高於前一期本金金額，且不得超過本專案所約定天期。(網路銀行、行動銀行上線時間將另行公告)</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">5.</td>
+      <td>申請人可透過本行各分行臨櫃、郵寄通訊、網路銀行或行動銀行參加本專案活動，單筆金額限制如下：(網路銀行、行動銀行上線時間將另行公告)
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25" valign="top">1).</td>
+            <td>『臨櫃、郵寄通訊申請』: 單筆新臺幣10萬元(含)以上新資金。</td>
+          </tr>
+          <tr>
+            <td valign="top">2).</td>
+            <td>『網路銀行、行動銀行申請』: 單筆新臺幣1萬元(含)以上新資金。</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">6.</td>
+      <td>本專案定存利息給付採單利計息，並於本專案定存每月開戶相對日期滿後給付優惠利息，且不可超前起息或指定定期存款到期日，如付息日遇例假日，將順延至次一營業日給付，且該例假日之計息利率仍依照前一階之優惠利率計算。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">7.</td>
+      <td>本專案各階到期日如遇例假日，該例假日利率將依照前一階優惠利率計算。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">8.</td>
+      <td>本專案之定期存款若申請人於優惠期間中途解約者，如整體存入期間未滿一個月者，不予計息；整體存入期間滿一個月以上者，按解約當時本專案當期適用利率及當期實際存款天數計息並打八折計算。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">9.</td>
+      <td>若申請人中途解約，不得再以相同之資金再行參加本專案；倘欲再行參加本專案，申請人須於專案期間內另以新資金承作本專案，且需另行申請並填寫本專案申請書，所適用利率將自本專案第一期之利率重新依照各期期間利率計息，不得要求逕依解約當時所適用之階段利率計息。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">10.</td>
+      <td>本專案定期存款種類為綜合定期存款，本行將不另製發存單。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">11.</td>
+      <td>本專案不開啟定存透支功能。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">12.</td>
+      <td>除本專案申請書另有約定外，本專案未規範事項均依照本行存款業務總約定書（含其變更及修訂）相關約定辦理。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">13.</td>
+      <td>本專案定存設有總額度限制，新臺幣定存為200億元整，倘本專案未截止（即107年03月30日）前已達總額度，本行得提前停止本專案。</td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">14.</td>
+      <td>申請人知悉且同意本行保留接受申請人申辦本專案之權利，如有不符合資格或違反法令情事，本行得不予受理。申請人亦同意本行保留核准、變更及終止本專案活動之權利，並得以本行網站之公告取代對申請人之通知。</td>
+    </tr>
+  </table></td>
+  </tr>
+</table>
+
+<footer>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="4" cellpadding="4" class="font12 fontw">
+      <tr>
+        <td>版權所有2017台新國際商業銀行 Copyright Taishin International Bank. All Right Reserved.</td>
+        </tr>
+    </table></td>
+    <td width="10" valign="middle" bgcolor="#888888"><img src="/TsCms/event/mk171201/img/pic17.png"></td>
+  </tr>
+</table>
+
+</footer>
+
+
+
+<script type="text/javascript" src="/TsCms/event/mk171201/js/greensock/TweenMax.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
+  	<script id="phone" src="/TsCms/event/mk171201/js/jquery.superscrollorama.js"></script>
+	<script>
+		/*$(document).ready(function() {
+            var controller = $.superscrollorama();
+			var scrollDuration = 100; 
+
+            
+			controller.addTween('.tabL', TweenMax.from( $('.tabL'), .7, {css:{opacity:0,marginRight:'100px'}, ease:Quad.easeInOut}), scrollDuration);
+			controller.addTween('.tabR', TweenMax.from( $('.tabR'), .5, {css:{opacity:0,marginRight:'-10%'}, ease:Quad.easeInOut}), scrollDuration);
+			controller.addTween('.men', TweenMax.from( $('.men'), .5, {css:{opacity:0,marginRight:'1000px',rotation: 0}, ease:Quad.easeInOut}), scrollDuration);
+
+			controller.addTween('#pk', TweenMax.from( $('#pk'), .5, {css:{opacity:0}, ease:Quad.easeInOut}), scrollDuration);
+			controller.addTween('#pa0300', TweenMax.from( $('#pa0300'), .5, {css:{opacity:0,scale:0}, ease:Quad.easeInOut}), scrollDuration);
+			
+			
+			controller.addTween('#tbox1,#tbox2', TweenMax.from( $('#tbox1,#tbox2'), .5, {css:{opacity:0,scale:0}, ease:Quad.easeInOut}), scrollDuration);
+			$('ul.tabshow li').css('position','relative').each(function() {
+					controller.addTween('ul.tabshow li', TweenMax.from( $(this), 1, {delay:Math.random()*.2,css:{left:Math.random()*200-100,top:Math.random()*200-100,opacity:0}, ease:Back.easeOut}));
+});
+
+});//程式結尾
+*/
+
+	
+
+		
+		
+	</script>
+<script src="/TsCms/event/mk171201/js/script.js"></script>
+</div>
+</body>
+</html>
