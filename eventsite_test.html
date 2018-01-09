@@ -102,13 +102,10 @@ function cID(name) {
 var cidL = cID("_ga").split(".").length;
 var TSB_ga_Cookie = cID("_ga").split(".")[cidL-2] + "." + cID("_ga").split(".")[cidL-1];
 
-var test ='0_null_2985f14e21cd402cb6d86667332e3b12_1499615424479_63799275_1511261895762_21';
 if(cID("LisboaCSApersisted")!= null){
   var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
 } else {
-  //var TSB_SAS_Cookie = 'null';
-  var TSB_SAS_Cookie = test.split("_")[2];
-
+  var TSB_SAS_Cookie = null;
 }
 </script>
 <script>
@@ -120,6 +117,35 @@ gtag('config', 'UA-109454817-1', {
     'dimension3': TSB_SAS_Cookie,    
     });
 </script>   
+
+
+<!-- Eland -->
+<script>
+  
+if(cust_No!= null){
+  var ts_id = cust_No;
+} else if(TSB_SAS_Cookie!= null){
+  var ts_id = TSB_SAS_Cookie;
+}
+else{
+  var ts_id = TSB_ga_Cookie;
+}
+</script>
+
+
+<script src="//dmp.eland-tech.com/dmpreceiver/eland_tracker_nopd.js"></script>
+<script type="text/javascript">
+var dataJson={'subFolder':'taishin_activity1',
+'ecInfo':{
+'memberID': ts_id
+},
+'trackType':'view',
+'trackSubfolderDepth':1,
+'targetType':'usual',
+'source':'taishinbank'
+};
+ElandTracker.Track(dataJson);
+</script>
 
 </head>
 
