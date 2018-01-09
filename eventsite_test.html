@@ -90,13 +90,16 @@ function cID(name) {
 }
 var cidL = cID("_ga").split(".").length;
 var TSB_ga_Cookie = cID("_ga").split(".")[cidL-2] + "." + cID("_ga").split(".")[cidL-1];
+var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
+console.log(TSB_ga_Cookie)
 </script>
 <script>
 gtag('config', 'UA-109454817-1', {
     'user_id':cust_No,
     'cookie_expires':63072000,
     'dimension1': cust_No,
-    'dimension3': SAS_Cookie
+    'dimension2': TSB_ga_Cookie,
+    'dimension3': TSB_SAS_Cookie,    
     });
 </script>   
 
