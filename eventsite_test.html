@@ -104,9 +104,7 @@ var TSB_ga_Cookie = cID("_ga").split(".")[cidL-2] + "." + cID("_ga").split(".")[
 
 if(cID("LisboaCSApersisted")!= null){
   var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
-} else {
-  var TSB_SAS_Cookie = '';
-}
+} 
 </script>
 <script>
 gtag('config', 'UA-109454817-1', {
@@ -124,7 +122,7 @@ gtag('config', 'UA-109454817-1', {
   
 if(cust_No!= null){
   var ts_id = cust_No;
-} else if(TSB_SAS_Cookie!= ''){
+} else if(TSB_SAS_Cookie!= null){
   var ts_id = TSB_SAS_Cookie;
 }
 else{
