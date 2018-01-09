@@ -102,7 +102,7 @@ function cID(name) {
 var cidL = cID("_ga").split(".").length;
 var TSB_ga_Cookie = cID("_ga").split(".")[cidL-2] + "." + cID("_ga").split(".")[cidL-1];
 
-if(cID("LisboaCSApersisted")!= 'undefined'){
+if(cID("LisboaCSApersisted")!= null){
   var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
 } else {
   var TSB_SAS_Cookie = 'null';
