@@ -104,10 +104,11 @@ var TSB_ga_Cookie = cID("_ga").split(".")[cidL-2] + "." + cID("_ga").split(".")[
 
 var test ='0_null_2985f14e21cd402cb6d86667332e3b12_1499615424479_63799275_1511261895762_21';
 if(cID("LisboaCSApersisted")!= null){
-  var TSB_SAS_Cookie = test.split("_")[2];
-  //var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
+  var TSB_SAS_Cookie = cID("LisboaCSApersisted").split("_")[2];
 } else {
-  var TSB_SAS_Cookie = 'null';
+  //var TSB_SAS_Cookie = 'null';
+  var TSB_SAS_Cookie = test.split("_")[2];
+
 }
 </script>
 <script>
