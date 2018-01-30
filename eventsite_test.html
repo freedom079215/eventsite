@@ -1,4 +1,247 @@
+<script type="text/javascript">
+function validateForm(){
+  var chtName = document.forms["mk171201-form"]["chtName"].value;
+  var phone2 = document.forms["mk171201-form"]["phone2"].value;
+  var phone3 = document.forms["mk171201-form"]["phone3"].value;
+  var mobile = document.forms["mk171201-form"]["mobile"].value;
+  var branch = document.forms["mk171201-form"]["branch"].value;
+  if (chtName=='') {
+    alert('請輸入姓名');
+    $("#chtName").focus();
+    return false;
+  }else if (phone2=='' && mobile=='') {
+    alert('請輸入市話或手機');
+    if(phone2==''){
+      $("#phone2").focus();
+    }else if(mobile==''){
+      $("#mobile").focus();
+    }
+    return false;
+  }else if (branch=='') {
+    alert('請選擇欲洽辦分行');
+    $("#branch").focus();
+    return false;
+  } 
+}
+function submit(){
+  $('#mk171201-form').submit();
+}
+$(function(){
+  //顯示成功或失敗
+  
+  
+  
+  
+  
+  
+  
+});
+
+function closeFailPage(){
+  $('#failPage').hide();
+}
+</script>
 
 
-<a href="https://mkp.taishinbank.com.tw/TsCms/event/mk171201">test</a>
 
+<form name="mk171201-form" id="mk171201-form" method="post" action="/TsCms/event/mk171201/register" onsubmit="return validateForm()">
+<input type="hidden" name="_csrf" value="c115ea22-f934-4c8c-8b98-0826f6f05458" />
+    <table border="0" cellspacing="0" cellpadding="0" align="left" class="intab01">
+      <tr>
+        <td height="10" colspan="2" align="left"  class="kvh"><img src="/TsCms/event/mk171201/img/mail01.png" height="20"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td width="130"  class="kvw"><img src="/TsCms/event/mk171201/img/mail01.png" height="20"></td>
+        <td>
+        <!--客戶姓名-->
+        <input name="chtName" type="text" class="pure-css-select-style theme-rounded3" maxlength="6" value=""></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" align="left"  class="kvh"><img src="/TsCms/event/mk171201/img/mail02.png" height="20" style="margin-top:10px"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td valign="top" class="kvw"><img src="/TsCms/event/mk171201/img/mail02.png" height="20" style="margin-top:10px"></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50" align="center"><img src="/TsCms/event/mk171201/img/mail0201.png" height="12"></td>
+            <td width="150">
+              <!-- 市話 -->
+              <input class="pure-css-select-style theme-rounded3" name="phone2" type="text" maxlength="10" value="">
+            </td>
+            <td width="50" align="center"><img src="/TsCms/event/mk171201/img/mail0202.png" alt="" height="12"></td>
+            <td width="70">
+              <!-- 分機 -->
+              <input class="pure-css-select-style theme-rounded3" name="phone3" type="text" maxlength="6" value="">
+            </td>
+          </tr>
+          <tr>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            <td align="center" height="10"></td>
+            </tr>
+          <tr>
+            <td align="center" height="10"><img src="/TsCms/event/mk171201/img/mail0203.png" height="12"></td>
+            <td height="10" colspan="3" align="center">
+              <!-- 手機 -->
+              <input class="pure-css-select-style theme-rounded3" name="mobile" type="text" maxlength="10" value="">
+            </td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2" class="kvh"><img src="/TsCms/event/mk171201/img/mail03.png" height="20" style="margin-top:10px"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td height="10" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="kvw"><img src="/TsCms/event/mk171201/img/mail03.png" height="20" style="margin-top:10px"></td>
+        <td>
+        <div class="pure-css-select-style theme-rounded" >
+        <!--請選擇分行-->
+        <select name="branch">
+          <option selected="selected" value="">我願意前往</option>
+            <option value="001">001 營業部(總行)</option>
+            <option value="002">002 敦南分行</option>
+            <option value="004">004 新生分行</option>
+            <option value="005">005 新莊分行</option>
+            <option value="006">006 桃園分行</option>
+            <option value="007">007 台中分行</option>
+            <option value="008">008 板橋分行</option>
+            <option value="009">009 高雄分行</option>
+            <option value="010">010 台南分行</option>
+            <option value="011">011 南京東路分行</option>
+            <option value="012">012 中壢分行</option>
+            <option value="015">015 苓雅分行</option>
+            <option value="016">016 蘆洲分行</option>
+            <option value="017">017 天母分行</option>
+            <option value="018">018 大里分行</option>
+            <option value="020">020 中和分行</option>
+            <option value="021">021 嘉義分行</option>
+            <option value="022">022 豐原分行</option>
+            <option value="023">023 花蓮分行</option>
+            <option value="024">024 新竹分行</option>
+            <option value="025">025 七賢分行</option>
+            <option value="026">026 信義分行</option>
+            <option value="027">027 北台中分行</option>
+            <option value="028">028 三重分行</option>
+            <option value="029">029 永福分行</option>
+            <option value="030">030 屏東分行</option>
+            <option value="031">031 大安分行</option>
+            <option value="032">032 龍潭分行</option>
+            <option value="033">033 崇德分行</option>
+            <option value="034">034 金華分行</option>
+            <option value="035">035 後甲分行</option>
+            <option value="036">036 海佃分行</option>
+            <option value="037">037 彰化分行</option>
+            <option value="038">038 五甲分行</option>
+            <option value="039">039 鳳山分行</option>
+            <option value="040">040 古亭分行</option>
+            <option value="041">041 建橋分行</option>
+            <option value="043">043 民生分行</option>
+            <option value="044">044 太平分行</option>
+            <option value="045">045 和平分行</option>
+            <option value="046">046 北高雄分行</option>
+            <option value="047">047 南新莊分行</option>
+            <option value="048">048 內湖分行</option>
+            <option value="049">049 永和分行</option>
+            <option value="051">051 逢甲分行</option>
+            <option value="052">052 竹科分行</option>
+            <option value="054">054 南屯分行</option>
+            <option value="055">055 大直分行</option>
+            <option value="056">056 南門分行</option>
+            <option value="061">061 西門分行</option>
+            <option value="062">062 敦北分行</option>
+            <option value="063">063 忠孝分行</option>
+            <option value="064">064 復興分行</option>
+            <option value="065">065 板南分行</option>
+            <option value="066">066 民權分行</option>
+            <option value="067">067 三民分行</option>
+            <option value="068">068 建北分行</option>
+            <option value="069">069 三和分行</option>
+            <option value="070">070 北新店分行</option>
+            <option value="071">071 府城分行</option>
+            <option value="072">072 東高雄分行</option>
+            <option value="073">073 基隆路分行</option>
+            <option value="074">074 新店分行</option>
+            <option value="075">075 北桃園分行</option>
+            <option value="076">076 大墩分行</option>
+            <option value="077">077 延平分行</option>
+            <option value="078">078 南崁分行</option>
+            <option value="079">079 景平分行</option>
+            <option value="080">080 文心分行</option>
+            <option value="081">081 岡山分行</option>
+            <option value="082">082 松江分行</option>
+            <option value="083">083 大雅分行</option>
+            <option value="084">084 汐止分行</option>
+            <option value="085">085 成功分行</option>
+            <option value="086">086 石牌分行</option>
+            <option value="087">087 永康分行</option>
+            <option value="088">088 南松山分行</option>
+            <option value="089">089 淡水分行</option>
+            <option value="090">090 東基隆分行</option>
+            <option value="091">091 新板分行</option>
+            <option value="092">092 北師分行</option>
+            <option value="093">093 佳里分行</option>
+            <option value="094">094 江翠分行</option>
+            <option value="097">097 松德分行</option>
+            <option value="098">098 北大分行</option>
+            <option value="099">099 南港分行</option>
+            <option value="100">100 關東橋分行</option>
+            <option value="101">101 竹北分行</option>
+            <option value="102">102 南寮分行</option>
+            <option value="103">103 八德分行</option>
+            <option value="104">104 員林分行</option>
+            <option value="105">105 市府分行</option>
+            <option value="106">106 右昌分行</option>
+            <option value="107">107 沙鹿分行</option>
+            <option value="108">108 竹南分行</option>
+            <option value="109">109 羅東分行</option>
+            <option value="110">110 東湖分行</option>
+            <option value="111">111 文山分行</option>
+            <option value="112">112 副都心分行</option>
+            <option value="113">113 景美分行</option>
+            <option value="114">114 雄科分行</option>
+          </select>
+        </select>
+      </div>
+      </td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="right" style="max-width:300px">
+      <tr></tr>
+      <tr>
+        <td align="center" class="kvw"><img src="/TsCms/event/mk171201/img/dog.png" class="hot_1" style="position:relative!important; margin-bottom:60px; margin-top:-100px"></td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td height="10" align="left">
+        <!--送出-->
+        <a href="javascript:void(0);" onclick="fbq('track', 'Lead');submit()">
+            <img border="0" src="/TsCms/event/mk171201/img/btn01.png" />
+        </a>
+        <!-- <input type="image" name="imageField" id="imageField" src="/TsCms/event/mk171201/img/btn01.png">  -->
+         <!--查詢分行地址 -->　
+       <input type="image" name="imageField2" id="imageField2" src="/TsCms/event/mk171201/img/btn02.png" onclick="window.open('https://www.taishinbank.com.tw/TS/TS12/TS1201/index.htm?region1_element1_NextRow=1&pageIndex=1');return false;"></td>
+      </tr>
+      </table>
+      
+      </form>
